@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="Width=device-width,initial-scale=1.0">
+        <title>Portfolio Site</title>
+        <link rel="stylesheet" href="Style.css">
+        <script src="https://kit.fontawesome.com/4dfcf81312.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="img/a.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>UI/UX Designer</p>
+                    <h1>Hi, I'm <span>Amit</span><br>Patel from USA, I am a UI/IX Designer.</h1>
+                </div>
+            </div>
+        </div>
+        <!--<hr height="5px" color="#4d0695" >-->
+        <!---About-------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="img/Amit.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            I'm aAmit Patel, I am a seasoned UI/UX Designer seamlessly blending creativity with technical expertise. My user-centric approach and proficiency in design tools make me invaluable for delivering exceptional digital experiences.
+                        </p>
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>Web Devlopment</span><br>Web Designer</li>
+                                <li><span>App Devlopment</span><br>Building Android/ios Apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Jul 2023 - Current</span><br>UI/UX Designer at Intuit.</li>
+                                <li><span>May 2020 - Nov 2021</span><br>Team Lead at Optimize Solutions.</li>
+                                <li><span>Feb 2019 - Apr 2020</span><br>Web Developer at Optimize Solutions.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Jan 2022 - May 2023</span><br>Master's in Compter Science at Georgia Insitute of  Technology.</li>
+                                <li><span>Jun 2016 - May 2019</span><br>Bechlor's in Compter Science at K.K Shah JarodWala.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<hr  width="" height="5px" color="#4d0695">-->
+        <!-------------Services--------------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>I Do All Kinds of Work Related to Web Sites.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>I Do All Kinds of Work Related to UI/UX Design.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Devlopment</h2>
+                        <p>I Do All Kinds of Work Related to App Devlopment.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<hr height="5px" color="#4d0695">
+       ---------------------------------Portfolio------------------------------>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="img/1item.jpg">
+                        <div class="layer">
+                            <h3>Mobile App UI</h3>
+                            <!-- <p>The app connects you yo the talented people around the world.
+                            Download it from Play Store.</p>-->
+                            <a href="#"><i class="fa-solid fa-download"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="img/2item.jpg">
+                        <div class="layer">
+                            <h3>Website</h3>
+                            <!-- <p>The Website connects you yo the talented people around the world.
+                            Download it from Play Store.</p>-->
+                            <a href="#"><i class="fa-solid fa-download"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="img/3item.png">
+                        <div class="layer">
+                            <h3>3D Dashboard</h3>
+                            <!--<p>The app connects you yo the talented people around the world.
+                            Download it from Play Store.</p>-->
+                            <a href="#"><i class="fa-solid fa-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+<!----------------------------------------contact-------------------------------------->
+        <div id="contact">
+            <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-square-envelope"></i>amit2patelUX@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>(302) 444-0442</p>
+                   <!--  <div class="social-icons">
+                        <a href="https://www.facebook.com/harsh.mevada.391"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://wa.me/+919313474425"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>-->
+                    <a href="" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your E-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div> 
+            </div>
+            <div class="copyright">
+                <p>Copyright <i class="fa-solid fa-copyright"></i> Amit.Made With <i class="fa-solid fa-heart"></i> by Amit Patel.</p>
+            </div>
+        </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        const msg = document.getElementById("msg");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    </body>
+</html>
